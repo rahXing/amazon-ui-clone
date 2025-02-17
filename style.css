@@ -1,21 +1,169 @@
+/* Resetting margin and padding, setting a default font family and box-sizing */
 * {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+
+/* Styling for the navigation bar */
 .nav-bar {
   height: 60px;
   background-color: #0f1111;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+/* Logo container */
 .nav-logo {
   height: 50px;
   width: 100px;
+  margin-left: 5px;
 }
+
+/* Setting the logo as a background image */
 .logo {
   background-image: url("assets/amazon_logo.png");
   background-size: cover;
   height: 50px;
   width: 100%;
+}
+
+/* Styling for borders with hover effect */
+.border {
+  border: 1.5px solid transparent;
+}
+
+.border:hover {
+  border: 1.5px solid white;
+}
+
+/* Address section */
+.address {
+  padding: 6px;
+}
+
+/* Styling for address lines */
+.add1 {
+  font-size: 0.8rem;
+  color: #cccccc;
+  margin-left: 15px;
+}
+
+.location {
+  font-size: 1rem;
+  margin-left: 3px;
+}
+
+/* Flex container for second address line */
+.add2 {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the search bar container */
+.navsearch {
+  display: flex;
+  width: 800px;
+  height: 40px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Search bar hover effect */
+.navsearch:hover {
+  border: 2px solid orange;
+  border-radius: 6px;
+}
+
+/* Styling for the select dropdown */
+.select {
+  background-color: #f3f3f3;
+  width: 50px;
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+/* Search input field */
+.searchbar {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+/* Search icon button styling */
+.searchicon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #0f1111;
+  background-color: rgb(243, 139, 29);
+  border: none;
+}
+
+/* Language section styling */
+.language {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+/* Margin for language text */
+.lang {
+  margin-left: 5px;
+}
+
+/* Sign-in section styling */
+.signin {
+  padding: 6px;
+}
+
+/* Sign-in text styling for two paragraphs */
+.signin p:nth-of-type(1) {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.signin p:nth-of-type(2) {
+  font-size: 14px;
+}
+
+/* Returns section styling */
+.returns {
+  padding: 6px;
+}
+
+/* Returns text styling for two paragraphs */
+.returns p:nth-of-type(1) {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.returns p:nth-of-type(2) {
+  font-size: 14px;
+}
+
+/* Shopping cart icon styling */
+.navcart i {
+  font-size: 30px;
+}
+
+/* Shopping cart container styling */
+.navcart {
+  font-size: 0.85rem;
+  margin-right: 15px;
+  padding: 6px;
 }
