@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Amazon Clone Navbar</title>
+
+    <!-- Font Awesome CDN for Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -11,45 +13,279 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Linking External CSS File -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="nav-bar">
-      <div class="nav-logo border">
-        <div class="logo"></div>
-      </div>
-      <div class="address border">
-        <p class="add1">Deliver to</p>
-        <div class="add2">
-          <i class="fa-solid fa-location-dot"></i>
-          <p class="location">India</p>
+    <header>
+      <!-- Navigation Bar -->
+      <div class="nav-bar">
+        <!-- Amazon Logo -->
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+
+        <!-- Delivery Address Section -->
+        <div class="address border">
+          <p class="add1">Deliver to</p>
+          <div class="add2">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="location">India</p>
+          </div>
+        </div>
+
+        <!-- Search Bar Section -->
+        <div class="navsearch">
+          <!-- Category Dropdown -->
+          <select class="select">
+            <option>ALL</option>
+          </select>
+
+          <!-- Search Input Field -->
+          <input placeholder="Search Amazon" class="searchbar" />
+
+          <!-- Search Icon -->
+          <div class="searchicon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <!-- Language Selection -->
+        <div class="language border">
+          <i class="fa-solid fa-language"></i>
+          <p class="lang">ENG</p>
+        </div>
+
+        <!-- Sign-in Section -->
+        <div class="signin border">
+          <p>Hello, Sign in</p>
+          <p>Accounts & Lists</p>
+        </div>
+
+        <!-- Returns & Orders -->
+        <div class="returns border">
+          <p>Returns</p>
+          <p>& Orders</p>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="navcart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
         </div>
       </div>
-      <div class="navsearch">
-        <select class="select">
-          <option>ALL</option>
-        </select>
-        <input placeholder="search input" class="searchbar" />
-        <div class="searchicon">
-          <i class="fa-solid fa-magnifying-glass"></i>
+      <!-- End of Navbar -->
+      <div class="navbar2">
+        <!-- second nav bar -->
+        <!-- menu option -->
+        <div class="all border">
+          <i class="fa-solid fa-bars"></i>
+          <p>All</p>
+        </div>
+
+        <!-- another options of 2nd navbar-->
+        <div class="navbar2_options">
+          <p class="border">Today's Deals</p>
+          <p class="border">Customer Service</p>
+          <p class="border">Registry</p>
+          <p class="border">Gift Cards</p>
+          <p class="border">Sell</p>
         </div>
       </div>
-      <div class="language border">
-        <i class="fa-solid fa-language"></i>
-        <p class="lang">ENG</p>
+      <!-- end of second nav bar -->
+    </header>
+    <main>
+      <!-- adding hero image -->
+      <div class="hero">
+        <div class="hero_info">
+          <p class="info">
+            You are on amazon.com. You can also shop on Amazon India for
+            millions of products with fast local delivery.<a
+              href="https://www.amazon.com/"
+            >
+              Click here to go to amazon.in</a
+            >
+          </p>
+        </div>
       </div>
-      <div class="signin border">
-        <p>Hello, sign in</p>
-        <p>Accounts and lists</p>
+      <!-- adding items or coontent in the site -->
+      <div class="content">
+        <div class="box">
+          <div class="box_content">
+            <h2>Clothes</h2>
+            <div
+              class="img"
+              style="background-image: url('assets/box1_image.jpg')"
+            ></div>
+            <p>See More</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box_content">
+            <h2>Electronics</h2>
+            <div
+              class="img"
+              style="background-image: url('assets/box2_image.jpg')"
+            ></div>
+            <p>See More</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box_content">
+            <h2>Furniture</h2>
+            <div
+              class="img"
+              style="background-image: url('assets/box3_image.jpg')"
+            ></div>
+            <p>See More</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box_content">
+            <h2>Smartphones</h2>
+            <div
+              class="img"
+              style="background-image: url('assets/box4_image.jpg')"
+            ></div>
+            <p>See More</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box_content">
+            <h2>Beauty pics</h2>
+            <div
+              class="img"
+              style="background-image: url('assets/box5_image.jpg')"
+            ></div>
+            <p>See More</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box_content">
+            <h2>Pet Items</h2>
+            <div
+              class="img"
+              style="background-image: url('assets/box6_image.jpg')"
+            ></div>
+            <p>See More</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box_content">
+            <h2>Toys</h2>
+            <div
+              class="img"
+              style="background-image: url('assets/box7_image.jpg')"
+            ></div>
+            <p>See More</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box_content">
+            <h2>Women Clothes</h2>
+            <div
+              class="img"
+              style="background-image: url('assets/box8_image.jpg')"
+            ></div>
+            <p>See More</p>
+          </div>
+        </div>
       </div>
-      <div class="returns border">
-        <p>Returns</p>
-        <p>& orders</p>
+    </main>
+    <footer>
+      <!-- making foooter in which we have 5 sections -->
+      <!-- making of 1st footer -->
+      <div class="footer1">Back to top</div>
+
+      <!-- footer 2,which has some important links in list format -->
+      <div class="footer2">
+        <div class="list">
+          <h2>Get to Know Us</h2>
+          <ul>
+            <li>Careers</li>
+            <li>Blog</li>
+            <li>About Amazon</li>
+            <li>Investor Relations</li>
+            <li>Amazon Devices</li>
+            <li>Amazon Science</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h2>Make Money with Us</h2>
+          <ul>
+            <li>Sell products on Amazon</li>
+            <li>Sell on Amazon Business</li>
+            <li>Sell apps on Amazon</li>
+            <li>Become an Affiliate</li>
+            <li>Advertise Your Products</li>
+            <li>Self-Publish with Us</li>
+            <li>Host an Amazon Hub</li>
+            <li>See More Make Money with Us</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h2>Amazon Payment Products</h2>
+          <ul>
+            <li>Amazon Business Card</li>
+            <li>Shop with Points</li>
+            <li>Reload Your Balance</li>
+            <li>Amazon Currency Converter</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h2>Let Us Help You</h2>
+          <ul>
+            <li>Amazon and COVID-19</li>
+            <li>Your Account</li>
+            <li>Your Orders</li>
+            <li>Shipping Rates & Policies</li>
+            <li>Returns & Replacements</li>
+            <li>Manage Your Content and Devices</li>
+            <li>Help</li>
+          </ul>
+        </div>
       </div>
-      <div class="navcart border">
-        <i class="fa-solid fa-cart-shopping"></i>
-        cart
+      <!-- footer 4 in which we amazon logo and some other links -->
+      <div class="footer4">
+        <div class="footer_logo"></div>
+        <div class="footer4_options">
+          <div class="footer4_options_inside">
+            <i class="fa-solid fa-globe"></i>
+            <p style="margin-left: 10px">English</p>
+          </div>
+          <div class="footer4_options_inside">
+            <p>USD-U.S. Dollar</p>
+          </div>
+          <div class="footer4_options_inside">
+            <i class="fa-regular fa-flag"></i>
+            <p style="margin-left: 10px">United States</p>
+          </div>
+        </div>
       </div>
-    </div>
+      <!-- footer5 in which we have copyright section or some other footer options-->
+      <div class="footer5">
+        <div class="footer5_1">
+          <p>Conditions of Use</p>
+          <p>Privacy Notice</p>
+          <p>Consumer Health Data Privacy Disclosure</p>
+          <p>Your Ads Privacy Choices</p>
+        </div>
+        <div class="footer5_2">
+          <i class="fa-solid fa-copyright"></i>
+          <p style="margin-left: 10px">
+            1996-2025, Amazon.com, Inc. or its affiliates
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
