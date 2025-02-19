@@ -1,1 +1,2 @@
 # amazon-ui-clone
+this is my first project ,in which i develop amazon ui clone ,which is purely made in html5 and css3 ,further after i learn more technologies i should made this website even better like adding responsivenes,or animations etc.
